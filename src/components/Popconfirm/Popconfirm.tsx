@@ -18,6 +18,7 @@
 
 // export default Popconfirm;
 
+"use client";
 
 import React from 'react';
 import * as Popover from '@radix-ui/react-popover';
