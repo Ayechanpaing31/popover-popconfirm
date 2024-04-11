@@ -1,12 +1,11 @@
 {
   "name": "ayechanpaing-design-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Creating component library for design system",
   "scripts": {
     "build:ts": "tsup src/index.ts --format cjs,esm --dts --minify --sourcemap",
     "build": "npm run build:ts",
     "rollup": "rollup -c --bundleConfigAsCjs"
-    
   },
   "repository": {
     "type": "git",
@@ -23,11 +22,11 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.2.75",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^4.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.4.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "typescript": "^5.4.4"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -43,7 +42,9 @@
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-select": "^2.0.0",
     "@types/react-dom": "^18.2.24",
-    "rollup-plugin-dts": "^6.1.0"
+    "clsx": "^2.1.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "tailwind-merge": "^2.2.2"
   },
   "peerDependencies": {
     "react": "^18.2.0",

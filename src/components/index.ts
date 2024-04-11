@@ -1,1 +1,1 @@
-export { default as Popconfirm } from './Popconfirm';
+export * from './Popconfirm';
