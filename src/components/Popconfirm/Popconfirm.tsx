@@ -24,18 +24,16 @@ import * as Popover from '@radix-ui/react-popover';
 
 interface PopconfirmProps {
     title: string;
-    onConfirm: () => void;
-    onCancel: () => void;
+    name: string
 }
 
-const Popconfirm = ({ title, onConfirm, onCancel }: PopconfirmProps) => {
+const Popconfirm = ({ title , name}: PopconfirmProps) => {
     return (
         <Popover.Root>
             <Popover.Trigger>{title}</Popover.Trigger>
             <Popover.Portal>
                 <Popover.Content>
-                    <button onClick={onConfirm}>Confirm</button>
-                    <button onClick={onCancel}>Cancel</button>
+                    {name}
                     <Popover.Arrow />
                 </Popover.Content>
             </Popover.Portal>
