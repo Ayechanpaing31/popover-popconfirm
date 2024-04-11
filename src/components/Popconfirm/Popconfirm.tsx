@@ -19,7 +19,7 @@
 // export default Popconfirm;
 
 
-import * as React from 'react';
+import React from 'react';
 import * as Popover from '@radix-ui/react-popover';
 
 interface PopconfirmProps {

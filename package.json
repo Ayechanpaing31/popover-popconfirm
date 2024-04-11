@@ -1,6 +1,6 @@
 {
   "name": "@Ayechanpaing31/inc-design-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creating component library for design system",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
