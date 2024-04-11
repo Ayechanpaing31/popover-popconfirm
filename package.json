@@ -33,9 +33,6 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/Ayechanpaing31"
-  },
   "dependencies": {
     "@radix-ui/primitive": "^1.0.1",
     "@radix-ui/react-compose-refs": "^1.0.1",
