@@ -41,8 +41,10 @@
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-select": "^2.0.0",
     "@types/react-dom": "^18.2.24",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "rollup-plugin-dts": "^6.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
