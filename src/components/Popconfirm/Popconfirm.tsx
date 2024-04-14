@@ -42,12 +42,13 @@
 import * as React from 'react'
 import * as PopoverPrimitive from '@radix-ui/react-popover'
 
-import { cn } from '../../lib/utils'
+import { cn } from '../../lib/utils';
+import './Popconfirm.css';
 
 interface PopoverConfirmContentProps extends React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> {
-  okText: string;
+  confirmText: string;
   cancelText: string;
-  onOK: () => void;
+  onConfirm: () => void;
   onCancel: () => void;
 }
 
@@ -66,15 +67,15 @@ const PopoverConfirmContent = React.forwardRef<
       align={align}
       sideOffset={sideOffset}
       className={cn(
-        'z-50 w-72 rounded-md border border-slate-100 bg-white p-4 shadow-md outline-none animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2 dark:border-slate-800 dark:bg-slate-800',
+        'rounded border border-slate-100 bg-white p-5 w-64 shadow-md outline-none animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2 dark:border-slate-800 dark:bg-slate-800',
         className
       )}
       {...props}
     >
       {children}
-      <div>
-        <button onClick={props.onOK}>{props.okText}</button>
-        <button onClick={props.onCancel}>{props.cancelText}</button>
+      <div className={cn('flex justify-end mt-4 space-x-2')}>
+        <button onClick={props.onCancel} className={cn('text-black bg-transparent mr-4')}>{props.cancelText}</button>
+        <button onClick={props.onConfirm } className={cn('bg-purple-500 text-white mx-4')}>{props.confirmText}</button>
       </div>
       <PopoverPrimitive.Arrow offset={10} style={{ fill: 'white' }} />
     </PopoverPrimitive.Content>
