@@ -1,9 +1,10 @@
 {
-  "name": "ayechanpaing-design-components",
-  "version": "1.0.43",
+  "name": "@acp0.2/design-components",
+  "version": "0.0.1",
   "description": "Creating component library for design system",
   "scripts": {
     "build": "tsup",
+    "release": "npm run build && npx changeset && npx changeset version && npx changeset publish",
     "rollup": "rollup -c --bundleConfigAsCjs"
   },
   "repository": {
@@ -52,5 +53,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
