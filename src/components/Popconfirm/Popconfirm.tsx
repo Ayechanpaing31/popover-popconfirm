@@ -44,21 +44,21 @@ import * as PopoverPrimitive from '@radix-ui/react-popover'
 
 import { cn } from '../../lib/utils'
 
-interface PopoverContentProps extends React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> {
+interface PopoverConfirmContentProps extends React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> {
   okText: string;
   cancelText: string;
   onOK: () => void;
   onCancel: () => void;
 }
 
-const Popover = PopoverPrimitive.Root
+const PopoverConfirm = PopoverPrimitive.Root
 
-const PopoverTrigger = PopoverPrimitive.Trigger
+const PopoverConfirmTrigger = PopoverPrimitive.Trigger
 
 
-const PopoverContent = React.forwardRef<
+const PopoverConfirmContent = React.forwardRef<
   React.ElementRef<typeof PopoverPrimitive.Content>,
-  PopoverContentProps 
+  PopoverConfirmContentProps 
 >(({ className, align = 'center', sideOffset = 4, children, ...props }, ref) => (
   <PopoverPrimitive.Portal>
     <PopoverPrimitive.Content
@@ -80,6 +80,6 @@ const PopoverContent = React.forwardRef<
     </PopoverPrimitive.Content>
   </PopoverPrimitive.Portal>
 ))
-PopoverContent.displayName = PopoverPrimitive.Content.displayName
+PopoverConfirmContent.displayName = PopoverPrimitive.Content.displayName
 
-export { Popover, PopoverTrigger, PopoverContent }
+export { PopoverConfirm, PopoverConfirmTrigger, PopoverConfirmContent }
