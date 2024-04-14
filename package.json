@@ -1,6 +1,6 @@
 {
   "name": "ayechanpaing-design-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Creating component library for design system",
   "scripts": {
     "build:ts": "tsup src/index.ts --format cjs,esm --dts --minify --sourcemap",

@@ -23,7 +23,14 @@ const PopoverContent = React.forwardRef<
         className
       )}
       {...props}
-    />
+    >
+     <PopoverPrimitive.Arrow offset={10} style={{ fill: 'white' }} />
+
+     <div>
+        <button>Yes</button>
+        <button>No</button>
+      </div>
+     </PopoverPrimitive.Content>
   </PopoverPrimitive.Portal>
 ))
 PopoverContent.displayName = PopoverPrimitive.Content.displayName
