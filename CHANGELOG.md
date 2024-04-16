@@ -1,5 +1,11 @@
 # @acp/ayechanpaing-design-components
 
+## 0.0.3
+
+### Patch Changes
+
+- changing the component
+
 ## 0.0.1
 
 ### Patch Changes
