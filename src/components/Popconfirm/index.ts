@@ -1,2 +1,2 @@
-export { PopoverConfirm, PopoverConfirmTrigger, PopoverConfirmContent } from './Popconfirm';
+export { default } from './Popconfirm';
 
