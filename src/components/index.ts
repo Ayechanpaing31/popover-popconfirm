@@ -1,2 +1,2 @@
-export { default as Popconfirm } from './Popconfirm';
+export {  Popconfirm, PopconfirmProps  } from './Popconfirm';
 export { Popover, PopoverTrigger, PopoverContent } from './Popover';

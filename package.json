@@ -1,6 +1,6 @@
 {
   "name": "@acp0.2/design-components",
-  "version": "0.0.3",
+  "version": "0.0.22",
   "description": "Creating component library for design system",
   "scripts": {
     "build": "tsup",

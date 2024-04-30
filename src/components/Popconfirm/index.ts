@@ -1,2 +1,2 @@
-export { default } from './Popconfirm';
+export {  Popconfirm, PopconfirmProps  } from './Popconfirm';
 
